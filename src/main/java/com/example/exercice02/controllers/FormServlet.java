@@ -22,9 +22,8 @@ public class FormServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String mode = req.getParameter("mode");
-        req.setAttribute("mode", mode);
-        getServletContext().getRequestDispatcher("/WEB-INF/addPerson.jsp").forward(req, resp);
+
+        getServletContext().getRequestDispatcher("/WEB-INF/persons/addPerson.jsp").forward(req, resp);
 
 
 
